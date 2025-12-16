@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -13,7 +13,84 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+*/
+.banner {
+  background-image: url('public\assets\iteration-1\home-banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1080px;
+  width: 100%;
+}
 
+.logo{
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 363px;
+}
+
+.firsatiKacirma {
+  font-family: 'Satisfy', cursive;
+  color: #FDC913;
+  font-weight: 200px;
+  font-size: 30px;
+  text-align: center;
+    display: block;
+  margin: 0 auto;
+}
+.kodAciktir {
+  font-family: 'Barlow', sans-serif;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 90px;
+  margin: 0;
+  text-align: center;
+}
+
+button.aciktimbuton {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #FDC913;
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  width: 194px;
+  height: 56px;
+  font-size: 20px; 
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+.banner-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+.kategori-menu {
+  background-color: white;
+  height: 94px;
+  display: flex;
+  justify-content: center;
+}
+
+.kategori-item {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  color: #1a1a1a;
+  font-weight: 500;
+  margin: 0 20px;
+  padding: 30px 20px;
+  cursor: pointer;
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -23,12 +100,77 @@ a:hover {
   color: #535bf2;
 }
 
-body {
+.body-content {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  height: 1080px;
+  width: 100%;
+  background-color: #535bf2;
+}
+footer{
+  margin: 0;
+  display: flex;
+  place-items: center;
+  height: 560px;
+  width: 100%;
+  background-color: #1a1a1a;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.iletisim-content {
+  margin: 0;
+  display: flex;
+  place-items: top;
+  width: 25%;
+  background-color: #1a1a1a;
+  height: auto;
+  padding: 20px;
+}
+.teknoYemek {
+  width: 150px;
+  margin-bottom: 20px;
+}
+.hot-menu {
+  margin: 0;
+  display: flex;
+  place-items: left;
+  width: 20%;
+  background-color: #1a1a1a;
+  height: 400px;
+}
+.instagram-content {
+  margin: 0;
+  display: flex;
+  place-items: left;
+  width: 20%;
+  background-color: #1a1a1a;
+  height: 400px;
+
+}
+
+
+
+.twitter-icon {
+  width: 24px;
+  height: auto;
+  cursor: pointer;
+  padding-right: 20%;
+}
+.alt-footer {
+  display: flex;
+  justify-content: space-between; /* sola + sağa yapıştırır */
+  align-items: center;            /* dikey ortalar */
+  padding: 16px 0;
+  padding-left: 15%;
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  background-color: #1a1a1a;
+  width: 100%;
+  height:auto;
+
 }
 
 h1 {
@@ -82,6 +224,71 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.adres {
+  margin-left: 10px;
+  align-items: center;
+
+}
+.adres-icon {
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.adres-text {
+  vertical-align: middle;
+  width: auto;
+  height: 20px;
+}
+
+.adres-text2 {
+  vertical-align: middle;
+  width: auto;
+  height: 20px;
+  margin-left: 30px;
+}
+.hot-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.instaFoto img {
+  margin: 5px;
+}
+
+.icon{
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+
+}
+
+footer {
+ font-family:"Barlow", sans-serif;
+  font-size: 20px;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
