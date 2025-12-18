@@ -1,19 +1,4 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-*/
 .banner {
   background-image: url('public\assets\iteration-1\home-banner.png');
   background-size: cover;
@@ -80,25 +65,35 @@ button.aciktimbuton {
   height: 94px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 0 20px;
+
 }
 
 .kategori-item {
   font-family: 'Barlow', sans-serif;
   font-size: 20px;
-  color: #1a1a1a;
+  color: black;
   font-weight: 500;
-  margin: 0 20px;
   padding: 30px 20px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
 }
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+.kategori-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+  padding: 0 20px;
+
 }
-a:hover {
-  color: #535bf2;
-}
+
 
 .body-content {
   margin: 0;
@@ -135,7 +130,7 @@ body {
 .pizza-kart {
   border-radius: 20px;
   padding: 40px;
-  color: #fff;
+  color: white;
   position: relative;
   overflow: hidden;
   min-height: 420px;
@@ -207,7 +202,7 @@ body {
   border-radius: 30px;
   border: none;
   background-color:white;
-  color: #d62828;
+  color: #CE2829;
   font-weight: 600;
   cursor: pointer;
 }
@@ -235,11 +230,11 @@ body {
   font-family: 'Barlow', sans-serif;
   font-size: 26px;
   line-height: 1.2;
-  color: #222;
+  color: black;
 }
 
 .kurye-kart .red {
-  color: #d62828;
+  color: #CE2829;
 }
 
 .kurye-kart button {
@@ -248,7 +243,7 @@ body {
   border-radius: 30px;
   border: none;
   background-color:white;
-  color: #d62828;
+  color: #CE2829;
   font-weight: 600;
   cursor: pointer;
 }
@@ -268,18 +263,18 @@ body {
 .menu-etiket {
   font-family: 'Satisfy', cursive;
   color: #CE2829;
-  font-size: 18px;
+  font-size: 32px;
 }
 
 .menu-baslik {
   font-size: 36px;
   font-weight: 700;
   margin: 10px 0 30px;
-  color: #222;
+  color: black;
   font-family: 'Barlow', sans-serif;
 }
 .menu-ve-urunler {
-  background-color: #fffaf5;
+  background-color: #FAF7F2;
   padding-bottom: 50px;
 }
 .menu-wrapper {
@@ -290,9 +285,10 @@ body {
 
 .kategori-listesi {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 15px;
   flex-wrap: wrap;
+
 }
 
 .kategori {
@@ -308,9 +304,8 @@ body {
 }
 
 .kategori.pizza {
-  background-color: #222;
   color: white;
-  background-color: #000;
+  background-color: black;
 }
 
 
@@ -347,13 +342,13 @@ body {
   justify-content: center;
   gap: 10px;
   font-size: 14px;
-  color: #555;
+  color: #292929;
 }
 
 .fiyat {
   margin-left: 15px;
   font-weight: bold;
-  color: #000;
+  color: black;
 }
 
 
@@ -363,7 +358,7 @@ footer{
   place-items: center;
   height: 560px;
   width: 100%;
-  background-color: #1a1a1a;
+  background-color: black;
   padding-left: 80px;
   padding-right: 80px;
 }
@@ -372,7 +367,7 @@ footer{
   display: flex;
   place-items: top;
   width: 25%;
-  background-color: #1a1a1a;
+  background-color: black;
   height: 400px;
   padding: 20px;
 }
@@ -385,7 +380,7 @@ footer{
   display: flex;
   place-items: left;
   width: 20%;
-  background-color: #1a1a1a;
+  background-color: black;
   height: 400px;
 }
 .instagram-content {
@@ -393,7 +388,7 @@ footer{
   display: flex;
   place-items: left;
   width: 20%;
-  background-color: #1a1a1a;
+  background-color: black;
   height: 400px;
 
 }
@@ -408,22 +403,24 @@ footer{
   background-color: white;
 }
 .alt-footer {
-  background-color: #1a1a1a;
-  padding: 10px 0;
+  background-color: black;
   align-items: center;
   height: 50px;
   justify-content: center;
   width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
   
 }
 .alt-footer-content {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 1px;
   padding-left: 17.5%;
   padding-right: 17.5%;
+  flex-direction: row;
+  margin-top: 20px;
 }
 .alt-footer span {
   font-family: "Barlow", sans-serif;
@@ -445,7 +442,7 @@ justify-content: center;
 .cizgi {
   width: 100%;
   height: 1px;
-  background-color: #1A1A1A;
+  background-color: #5F5F5F;
 }
 
 
@@ -467,39 +464,7 @@ h1 {
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 .adres {
   margin-left: 10px;
   align-items: center;
@@ -576,16 +541,110 @@ footer ul {
 }
 
 
+@media (max-width: 768px) {
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+  .banner {
+    height: device-height;
+    padding: 50px 50px;
   }
-  a:hover {
-    color: #747bff;
+
+  .logo {
+    width: 300px;
+    height: auto;
   }
-  button {
-    background-color: #f9f9f9;
+
+  .firsatiKacirma {
+    font-size: 0px;
+  }
+
+  .kodAciktir {
+    line-height: 1.2;
+    font-size: 60px;
+  }
+
+  button.aciktimbuton {
+    width: 180px;
+    height: 52px;
+    font-size: 18px;
+  }
+
+  .kategori-menu {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .kategori-item {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .body-content {
+    height: auto;
+    padding: 20px 0;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    padding: 0 16px;
+  }
+
+  .pizza-kart {
+    min-height: auto;
+    padding: 30px;
+  }
+
+  .sagdaki-kartlar {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-ust {
+    padding: 40px 16px 20px;
+  }
+
+  .menu-baslik {
+    font-size: 28px;
+  }
+
+  .kategori-listesi {
+    
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .kategori {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+
+  .urunler {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .urun-kart img {
+    width: 180px;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+    padding-left: 10%;
+  }
+
+  .iletisim-content,
+  .hot-menu,
+  .instagram-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .alt-footer-content {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
   }
 }
+
+
+
